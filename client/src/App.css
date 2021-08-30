@@ -1,11 +1,16 @@
 
 
-.App {
-  text-align: center;
+html{
+  padding: 0;
+  overflow: hidden;
 }
 
-*::-webkit-scrollbar {
-  display: none;
+.App {
+  text-align: center;
+  min-height: 100vh;
+  overflow: hidden;
 }
+
+
 
 
