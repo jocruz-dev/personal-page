@@ -7,3 +7,7 @@
     color: white;
     background-color: black;
 }
+
+.home_container::-webkit-scrollbar {
+    display: none;
+  }
