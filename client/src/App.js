@@ -1,10 +1,11 @@
 import logo from './logo.svg';
 import './App.css';
 import {useEffect, useState} from 'react';
+import PageContainer from './components/page-container'
 
 function App() {
 
-  const [Data, setData] = useState('initialState');
+  const [Data, setData] = useState('');
 
 
   async function getData(params) {
@@ -17,20 +18,7 @@ function App() {
   },[])
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          {Data}
-        </a>
-      </header>
+      <PageContainer></PageContainer>
     </div>
   );
 }

@@ -1,0 +1,9 @@
+.main_container {
+    height: 100vh;
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+}
+
+.main_container::-webkit-scrollbar {
+    display: none;
+  }
